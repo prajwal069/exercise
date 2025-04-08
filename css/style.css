@@ -1,0 +1,256 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #009688;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 2.5rem;
+    color: white;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-links li {
+    margin-right: 20px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav .id {
+    display: none; /* You can add a hamburger menu later if needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav .id {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Introduction Section */
+#introduction {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#introduction h1 {
+    font-size: 6vw; /* Dynamic resizing */
+    color: #009688;
+}
+
+#introduction p {
+    font-size: 2.5vw;
+    line-height: 1.6;
+    color: #555;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 2.2vw;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #004d40;
+}
+
+/* Outfit Section */
+#outfit {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+#outfit h2 {
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.outfit-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.outfit-card {
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.outfit-card img {
+    width: 100%;
+    height: auto;
+}
+
+.outfit-card h3 {
+    font-size: 2rem;
+    color: #009688;
+}
+
+.outfit-card p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Exercise Section */
+#exercise {
+    padding: 40px 0;
+    background-color: #e0f2f1;
+}
+
+#exercise h2 {
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.exercise-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.exercise-card {
+    width: 30%;
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-card i {
+    font-size: 3rem;
+    color: #009688;
+}
+
+.exercise-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.exercise-card h3 {
+    font-size: 1.5rem;
+    color: #00796b;
+}
+
+.exercise-card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #009688;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #00796b;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .cta-button {
+        font-size: 3vw;
+    }
+
+    .outfit-card,
+    .exercise-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+}
