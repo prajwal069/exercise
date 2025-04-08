@@ -1,141 +1,38 @@
-/* Global styles */
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  transition: background-color 0.4s, color 0.4s;
 }
 
-/*  Section One */
-.one {
-  background: url('/excersices/assets/images/background.jpg') no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.intro-section {
+  background: url('/excersices/assets/images/crciket.jpg') center/cover no-repeat;
+  height: 300px;
+  background-attachment: fixed;
+  position: relative;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .bg-white {
+  background-color: #2b2b2b !important;
   color: white;
-  text-align: center;
 }
 
-.one-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 8px;
+.dark-mode .intro-section {
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Navbar styles */
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  background-color: #333;
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
 }
 
-.main-nav ul li {
-  margin: 0 20px;
-}
-
-.main-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Section styles */
-.section {
-  padding: 50px 20px;
-}
-
-/* About Section */
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.about-img-container {
-  flex: 1;
-  max-width: 500px;
-}
-
-.about-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Workout Cards */
-.workout-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card-img-container {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.workout-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Benefits Section */
-.benefits-section ul {
-  list-style: none;
-  padding: 10px 0;
-}
-
-.benefits-section ul li {
-  margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.footer-logo {
-  font-size: 24px;
-  font-weight: bold;
-  
-}
-.toogle{
-  color: #ddd;
-  cursor: pointer;
+[data-aos].aos-animate {
+  opacity: 1;
 }

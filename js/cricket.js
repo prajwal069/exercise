@@ -1,29 +1,38 @@
-// Smooth Scroll Effect for Navigation Links
-document.querySelectorAll('.main-nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-  
-      window.scrollTo({
-        top: targetElement.offsetTop - 60, // Adjust for navbar height
-        behavior: 'smooth'
-      });
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const darkBtn = document.getElementById("darkModeBtn");
+
+  darkBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
   });
-  
-  // Animation on Page Load for one Section
-  window.addEventListener('load', () => {
-    const heroOverlay = document.querySelector('.hero-overlay');
-    heroOverlay.classList.add('fade-in');
-  });
-  
-  // Add fade-in class to the one overlay after page load
-  // This ensures the one section text is animated when the page loads
-  setTimeout(() => {
-    const heroOverlay = document.querySelector('.hero-overlay');
-    heroOverlay.style.transition = 'opacity 2s ease-in-out';
-    heroOverlay.style.opacity = 1;
-  }, 1000);  // Delay to make sure the page is fully loaded
-  
+});
+
+function showPlan(type) {
+  const planContainer = document.getElementById("planContainer");
+
+  if (type === "week") {
+    planContainer.innerHTML = `
+      <h4>🏃 1 Week Cricket Plan</h4>
+      <ul class="list-group mt-3 text-start" data-aos="fade-left">
+        <li class="list-group-item">Day 1 – Warm-up, agility drills, batting</li>
+        <li class="list-group-item">Day 2 – Cardio + bowling technique</li>
+        <li class="list-group-item">Day 3 – Strength training + core</li>
+        <li class="list-group-item">Day 4 – HIIT and catching practice</li>
+        <li class="list-group-item">Day 5 – Full body circuit</li>
+        <li class="list-group-item">Day 6 – Light jogging, yoga</li>
+        <li class="list-group-item">Day 7 – Rest and recovery</li>
+      </ul>
+    `;
+  } else if (type === "month") {
+    planContainer.innerHTML = `
+      <h4>💪 1 Month Cricket Plan</h4>
+      <ul class="list-group mt-3 text-start" data-aos="fade-left">
+        <li class="list-group-item">Week 1 – Stamina building and mobility</li>
+        <li class="list-group-item">Week 2 – Weight training and endurance</li>
+        <li class="list-group-item">Week 3 – Speed drills and dynamic movements</li>
+        <li class="list-group-item">Week 4 – Match simulation and mental prep</li>
+      </ul>
+    `;
+  }
+
+  AOS.init(); // reinitialize animation after DOM change
+}
