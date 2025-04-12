@@ -38,8 +38,11 @@ body {
 #planContainer {
   transition: all 0.3s ease-in-out;
 }
-
 a.text-white {
   margin-right: 12px;
   text-decoration: none;
 }
+.bg-black {
+  background-color: #000;
+}
+
