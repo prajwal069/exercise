@@ -24,21 +24,21 @@ function selectDuration(duration) {
 
     // Create redirection logic based on sport + duration
     if (sport === "Basketball" && duration === "1week") {
-        redirectUrl = "/html/plans/basketball-1week.html";
+        redirectUrl = "/excersices/pages/plans/basketball-1week.html";
     } else if (sport === "Basketball" && duration === "1month") {
-        redirectUrl = "/html/plans/basketball-1month.html";
+        redirectUrl = "/excersices/pages/plans/basketball-1month.html";
     } else if (sport === "Football" && duration === "1week") {
-        redirectUrl = "/html/plans/football-1week.html";
+        redirectUrl = "/excersices/pages/plans/football-1week.html";
     } else if (sport === "Football" && duration === "1month") {
-        redirectUrl = "/html/plans/football-1month.html";
+        redirectUrl = "/excersices/pages/plans/football-1month.html";
     } else if (sport === "Cricket" && duration === "1week") {
-        redirectUrl = "/html/plans/cricket-1week.html";
+        redirectUrl = "/excersices/pages/plans/cricket-1week.html";
     } else if (sport === "Cricket" && duration === "1month") {
-        redirectUrl = "/html/plans/cricket-1month.html";
+        redirectUrl = "/excersices/pages/plans/cricket-1month.html";
     } else if (sport === "Hockey" && duration === "1week") {
-        redirectUrl = "/html/plans/hockey-1week.html";
+        redirectUrl = "/excersices/pages/plans/hockey-1week.html";
     } else if (sport === "Hockey" && duration === "1month") {
-        redirectUrl = "/html/plans/hockey-1month.html";
+        redirectUrl = "/excersices/pages/plans/hockey-1month.html";
     }
 
     // Redirect if URL is found
