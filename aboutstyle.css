@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f1;
+    color: #222;
+    background-color: url(/excersices/Green\ Modern\ About\ Us\ A4\ Document_20250407_223050_0000.png)
+  }
+  
+  .header-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .image-row img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .image-row img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .about-section {
+    padding: 60px 30px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .about-section h1 {
+    font-size: 56px;
+    color: #3a573d;
+    margin-bottom: 20px;
+    transition: color 0.4s ease, transform 0.3s ease;
+  }
+  
+  .about-section h1:hover {
+    color: #4CAF50;
+    transform: scale(1.05);
+  }
+  
+  .about-section p {
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .about-section p:hover {
+    color: #444;
+    transform: translateX(10px);
+  }
+  
+  .signature {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 40px 0 15px;
+    color: #000;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .signature:hover {
+    transform: scale(1.05);
+    color: #4CAF50;
+  }
+  
+  .mission {
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .contact-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e0f7e9;
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-number {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  button#callButton {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button#callButton:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  
