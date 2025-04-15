@@ -19,7 +19,7 @@
           <li><a href="/pages/contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="toggle">🌙 Dark Mode</div>
+      <div class="toggle">🌙</div>
     </header>
 
     <main>
@@ -29,41 +29,35 @@
 
         <div class="sports-grid">
           <div class="sport">
-            <img src="/assets/images/hockey.avif" alt="Hockey" onclick="selectSport('Hockey')">
+            <a href="/pages/hockey.html">
+              <img src="/assets/images/hockey.avif" alt="Hockey">
+            </a>
             <span>Hockey</span>
           </div>
 
           <div class="sport">
-            <img src="/assets/images/basketball.jpg" alt="Basketball" onclick="selectSport('Basketball')">
+            <a href="/pages/hockey.html">
+              <img src="/assets/images/basketball.jpg" alt="Basketball">
+            </a>
             <span>Basketball</span>
           </div>
 
           <div class="sport">
-            <img src="/assets/images/football.jpg" alt="Football" onclick="selectSport('Football')">
+            <a href="/pages/hockey.html">
+              <img src="/assets/images/football.jpg" alt="Football">
+            </a>
             <span>Football</span>
           </div>
 
           <div class="sport">
-            <img src="/assets/images/cricket.jpg" alt="Cricket" onclick="selectSport('Cricket')">
+            <a href="/pages/cricket.html">
+              <img src="/assets/images/cricket.jpg" alt="Cricket">
+            </a>
             <span>Cricket</span>
           </div>
         </div>
       </div>
     </main>
   </div>
-
-  <!-- Duration Selection Modal -->
-  <div id="duration-modal" class="modal hidden">
-    <div class="modal-content">
-      <h2>Select Duration</h2>
-      <div class="duration-buttons">
-      <button onclick="selectDuration('1week')" class="duration-button"><span>1 Week</span></button>
-      <button onclick="selectDuration('1month')" class="duration-button"><span>1 Month</span></button>
-      </div>
-      <button onclick="closeModal()" class="Cancel">Cancel</button>
-    </div>
-  </div>
-
-  <script src="/js/services.js"></script>
 </body>
 </html>

@@ -18,7 +18,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3rem;
   }
 
   .logo img {
@@ -64,7 +63,7 @@
     font-size: 3rem;
     font-weight: 900;
     color: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding-left: 100px;
   }
   
@@ -108,7 +107,7 @@
   }
 
   .getStarted {
-    padding: 20px 100px;
+    padding: 0px 100px;
   }
   
   .get-started-btn .text {
@@ -132,7 +131,6 @@
   .get-started-btn:active {
     transform: scale(0.95);
   }
-  
   
   
   .image-section .player-img {
@@ -213,91 +211,11 @@
     gap: 0.5rem;
   }
 
-  /* Modal styles */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-}
-
-.modal-content {
-  background-color: #222121;
-  padding: 2rem;
-  border-radius: 10px;
-  text-align: center;
-  width: 600px;
-  height: 600px;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-}
-
-.duration-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  gap: 50px;
-}
-
-.duration-button {
-  height: 150px;
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  padding: 20px;
-  border-radius: 25px;
-  background-color: #ffffff;
-  color: black;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.duration-button span{
-  font-size: xx-large;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-}
-
-.duration-button:hover {
-  background-color: #b8b8b8;
-}
-
-.duration-button span {
-  text-align: center;
-  font-size: large; 
-}
-
-.Cancel {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  background-color: #e74c3c;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  height: 50px;
-  width: 200px;
-}
-
-.Cancel:hover {
-  background-color: #c0392b;
-}
-
 .hidden {
   display: none;
 }
 
-  
+.carousel-image1{
+  width: 100%;
+  height: 100%;
+}
