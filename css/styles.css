@@ -250,12 +250,12 @@
 .duration-button {
   height: 150px;
   width: 150px;
-  display: flex; /* Added flex for centering the text */
-  justify-content: center; /* Horizontally centers the text */
-  align-items: center; /* Vertically centers the text */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   padding: 20px;
   border-radius: 25px;
-  background-color: #ffffff; /* Added background color */
+  background-color: #ffffff;
   color: black;
   font-size: 1.2rem;
   cursor: pointer;
@@ -271,12 +271,12 @@
 }
 
 .duration-button:hover {
-  background-color: #b8b8b8; /* Hover effect */
+  background-color: #b8b8b8;
 }
 
 .duration-button span {
   text-align: center;
-  font-size: large; /* Adjust font size */
+  font-size: large; 
 }
 
 .Cancel {
