@@ -3,53 +3,158 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 body {
-
-  background-color: white;
-  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000000;
+  color: #e0e0e0;
+  transition: background-color 0.4s, color 0.4s;
 }
 
-.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
+.container {
+  padding: 2rem;
 }
 
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 160px;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.active {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Toggle Theme Switch */
+.toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Intro Section */
 .intro-section {
-  height: 80vh;
-  background: url('/assets/images/bat.jpg');
-  position: relative;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('/assets/images/hockey.jpg') no-repeat center center/cover;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #ffffff;
 }
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.intro-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: auto;
+  color: #cccccc;
 }
 
-.intro-text {
-  position: relative;
-  z-index: 1;
+/* About Section */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.card {
-  transition: transform 0.3s ease-in-out;
+#about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
 }
 
-.card:hover {
-  transform: scale(1.03);
+#about p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+  color: #bdbdbd;
+}
+
+/* Plans Section */
+#plans {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+}
+
+#plans h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.btn-group .btn {
+  margin: 0.5rem;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 #planContainer {
-  transition: all 0.3s ease-in-out;
-}
-a.text-white {
-  margin-right: 12px;
-  text-decoration: none;
-}
-.bg-black {
-  background-color: #000;
+  background-color: #292929;
+  color: #ffffff;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s;
 }
 
+#planContainer p {
+  margin: 0;
+  color: #bbbbbb;
+}
+
+/* Remove text selection highlight */
+::selection {
+  background: none;
+  color: inherit;
+}

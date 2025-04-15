@@ -5,46 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cricket Fitness Plan</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- AOS Animation CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/excersices/css/cricket.css" />
-  <link rel="icon" type="image/png" href="/excersices/assets/images/crciket.jpg" sizes="16x16">
+  <link rel="stylesheet" href="/css/cricket.css" />
+  <link rel="icon" type="image/png" href="/assets/images/crciket.jpg" sizes="16x16">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">🏏 CricketFit</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About Cricket</a></li>
-          <li class="nav-item"><a class="nav-link" href="#plans">Workout Plans</a></li>
-          <li class="nav-item">
-            <button id="darkModeBtn" class="btn btn-sm btn-light ms-2">Toggle Dark Mode</button>
-          </li>
-        </ul>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="/assets/exercises-logo/png/exercises-high-resolution-logo-transparent.png">
       </div>
-    </div>
-  </nav>
+      <nav>
+        <ul>
+          <li><a href="/pages/index.html">Home</a></li>
+          <li><a href="/pages/services.html" class="active">Service</a></li>
+          <li><a href="/pages/about.html">About us</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="toggle">🌙</div>
+    </header>
+  </div>
 
   <!-- Intro section -->
   <header class="intro-section d-flex align-items-center justify-content-center">
     <div class="text-center text-white px-3" data-aos="fade-up">
-      <h1>Welcome to CricketFit</h1>
       <p class="lead mt-3">
         Cricket isn’t just about hitting boundaries – it’s about stamina, speed, and strength too.
         Whether you're just starting or play every weekend, our fitness plans are designed to help you train like a true cricketer.
         Scroll down to learn more and get started with a workout plan that suits you!. Play It Or Break It!!
       </p>
     </div>
-  </header>
+  </header>  
 
   <!-- About Section -->
   <section id="about" class="container my-5" data-aos="fade-up">
@@ -67,20 +58,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <p>© 2025 CricketFit | Built for players, learners & sports lovers 🏏</p>
-    <a href="#" class="text-white mx-2 text-decoration-none">Home</a> |
-    <a href="#about" class="text-white mx-2 text-decoration-none">About</a> |
-    <a href="#plans" class="text-white mx-2 text-decoration-none">Plans</a>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS Animation JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
-  <!-- Custom JS -->
   <script src="/js/cricket.js"></script>
 </body>
 </html>
