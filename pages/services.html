@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services - Exercises</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="/assets/exercises-logo/png/exercises-high-resolution-logo-transparent.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/pages/index.html">Home</a></li>
+          <li><a href="/pages/services.html" class="active">Service</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="toggle">🌙 Dark Mode</div>
+    </header>
+
+    <main>
+      <div class="text-section">
+        <h1>Choose Your Sport</h1>
+        <p>Select the sport you play to get tailored warm-up exercises.</p>
+
+        <div class="sports-grid">
+          <div class="sport">
+            <img src="/assets/images/hockey.avif" alt="Hockey" onclick="selectSport('Hockey')">
+            <span>Hockey</span>
+          </div>
+
+          <div class="sport">
+            <img src="/assets/images/basketball.jpg" alt="Basketball" onclick="selectSport('Basketball')">
+            <span>Basketball</span>
+          </div>
+
+          <div class="sport">
+            <img src="/assets/images/football.jpg" alt="Football" onclick="selectSport('Football')">
+            <span>Football</span>
+          </div>
+
+          <div class="sport">
+            <img src="/assets/images/cricket.jpg" alt="Cricket" onclick="selectSport('Cricket')">
+            <span>Cricket</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Duration Selection Modal -->
+  <div id="duration-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Select Duration</h2>
+      <div class="duration-buttons">
+      <button onclick="selectDuration('1week')" class="duration-button"><span>1 Week</span></button>
+      <button onclick="selectDuration('1month')" class="duration-button"><span>1 Month</span></button>
+      </div>
+      <button onclick="closeModal()" class="Cancel">Cancel</button>
+    </div>
+  </div>
+
+  <script src="/js/services.js"></script>
+</body>
+</html>
